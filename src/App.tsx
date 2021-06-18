@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Person from './Person';
+import UseEffectHooks from './UseEffectHooks';
 
 function App(): JSX.Element {
   const [name] = useState('Aditya');
@@ -19,6 +20,7 @@ function App(): JSX.Element {
         birthDat={new Date('2020-10-01')}
         birthLocation={{ latitude: '20W', longitude: '30E', height: 200 }}
       />
+      <UseEffectHooks />
     </div>
   );
 }
