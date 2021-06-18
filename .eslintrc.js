@@ -36,13 +36,21 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'import/prefer-default-export': 'off',
     'react/prop-types': 'off',
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: ['**/*.stories.tsx'],
+      },
+    ],
+    'react/jsx-props-no-spreading': 'off',
+    '@typescript-eslint/ban-types': 'off',
   },
   settings: {
-    react: {
-      version: 'latest',
-    },
     'import/resolver': {
       typescript: {},
+    },
+    react: {
+      version: 'latest',
     },
   },
 };
